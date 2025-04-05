@@ -7,12 +7,14 @@ import * as utils from './utils.js';
 const name = utils.select('.name');
 const email = utils.select('.email');
 const message = utils.select('.message');
+const submit = utils.select('.submit');
 
-// If I wanted to fail I'd find a way to use this...
 
-// // utils.js
-// export async function fetchRandomQuote() {
-//     const response = await fetch("https://api.quotable.io/random");
-//     const data = await response.json();
-//     return data.content;
-// }
+
+utils.listen('click', submit, () => {
+    message.value = 
+    "So this form doesn't actually work yet. If you need to email me use the button bellow.";
+    if (nameIsValid() && emailIsValid() && messageIsValid()) {
+        /* validation will go here when I actually need to make this work */
+    }
+});
