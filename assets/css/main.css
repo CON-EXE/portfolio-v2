@@ -241,6 +241,44 @@ section {
     max-width: calc(25% - 15px);
 }
 
+.form-container { /* Thanks Andre */
+    width: min(100% - 40px, 480px);
+    margin-inline: auto;
+    margin-bottom: 25px;
+    
+    form {
+        width: 100%;
+        display: block;
+        text-align: left;
+        
+        textarea, input {
+            width: 100%;
+            padding: 10px 15px;
+            margin: 20px 0;
+            color: #fff;
+            border-radius: 6px;
+            background-color: rgb(255 255 255 / 8%);
+        }
+
+        textarea {
+            height: 200px;
+            resize: none;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        button {
+            border-radius: 25px;
+            width: 100%;
+            height: 50px;
+            color: #fff;
+            background-color: #e30022;
+        }
+    }
+}
+
 .contact {
 
     p {
@@ -253,12 +291,9 @@ section {
     }
 }
 
-.contact-icons {
-    gap: 30px;
-    margin: 40px;
-}
-
 .contact-icons a {
+    gap: 15px;
+    margin: 20px;
     height: 75px;
     width: 75px;
     border: solid 1px #fd0026;
@@ -266,15 +301,12 @@ section {
     color: #fd0026;
     text-decoration: none;
     transition: transform 0.2s;
+    font-size: 40px;
+    line-height: 75px;
 }
 
 .contact-icons a:hover {
     transform: scale(1.2);
-}
-
-.contact-icons i {
-    font-size: 40px;
-    line-height: 75px;
 }
 
 .footer-overlay {
