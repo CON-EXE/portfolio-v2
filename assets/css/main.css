@@ -156,6 +156,10 @@ nav ul li {
     }
 }
 
+.dropdown {
+    display: none;
+}
+
 .arrow {
     color: #e30022;
     font-size: 30px;
@@ -336,18 +340,26 @@ section {
 }
 
 @media (max-width: 768px) {
+
+
     .col-md-6 {
         flex: 0 0 calc(50% - 10px);
         max-width: calc(50% - 10px);
+    }
+
+    .hero-content div h2 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
     }
 
     .about p {
         font-size: 16px;
     }
     
-    .hero-content h2 {
-        font-size: 30px;
-    }
+    
 
     p {
         font-size: 18px;
@@ -358,7 +370,5 @@ section {
     .col-xs-12 {
         flex: 0 0 100%;
         max-width: 100%;
-    }
-    
-    
+    } 
 }
